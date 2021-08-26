@@ -1,0 +1,7 @@
+* Ponteiros (26/08)
+* Alocação dinâmica (29/08)
+* Estrutura (2/09)
+* Arquivo (5/09)
+
+Bibliografia:
+- Linguagem C, Luís Damas, 10a edição
