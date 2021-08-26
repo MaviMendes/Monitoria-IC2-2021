@@ -19,7 +19,7 @@ int main()
     char *ptr = s; // ptr tem como valor &s[0] endereço do primeiro elemento
 
     printf("Caractere na posicao 5: %c\n",s[5]);
-    printf("Caractere na posicao 5: %c\n",*(ptr+5));
+    printf("Caractere na posicao 5: %c\n",*(ptr+5)); 
     printf("Caractere na posicao 5: %c\n",*(s+5));
     printf("Caractere na posicao 5: %c\n",ptr[5]); // endereçar ponteiros por vetores também é aceitável
 
@@ -29,11 +29,11 @@ int main()
     // Um vetor é alocado em posições contíguas de memória, sendo o seu nome um ponteiro para o endereço do primeiro elemento
     // Quando um vetor é passado para uma função como parâmetro, ela recebe o endereço inicial do vetor, pois passamos o nome dele
     // Assim, quando passamos um vetor para uma função, passamos um endereço. Logo, deve haver um ponteiro para recebê-lo
-    // Um vetor não tem memória própria. Só utilizamos o endereçamento por meio de um ponteiro depois que ele está apontando para um objeto previamente existente
+    // Um ponteiro não tem memória própria. Só utilizamos o endereçamento por meio de um ponteiro depois que ele está apontando para um objeto previamente existente
 
     // Exemplo: strcpy
 
-    char s1[] = "Monitoria de IC2 acontece 2a e 5a as 18:30!";
+    char s1[] = "Monitoria de IC2 acontece 2a e 4a as 18:30!";
     char s2[100];
 
     printf("s2 recebe uma copia de s1, s2 = %s\n", Mystrcpy(s2,s1));
@@ -53,7 +53,8 @@ char *Mystrcpy(char *dest, char *orig)
         orig recebe o endereço inicial de s1
         tmp aponta para o mesmo endereço que dest
     */
-    char *tmp = dest;
+    char *tmp = dest; 
+    
     while(*dest++ = *orig++) // Primeiro, acontece a atribuição, depois as variáveis são incrementadas
         ;
     // dest avançou ao longo do loop, seu endereço inicial se perdeu

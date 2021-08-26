@@ -49,7 +49,7 @@ int main()
     -> Incremento: ptr + sizeof(tipo)
     ptr += 4; --> vai avançar 4*sizeof(tipo) bytes
 
-    -> Decremento: ptr - sizeog(tipo)
+    -> Decremento: ptr - sizeof(tipo)
     
     -> Diferença: a diferença entre dois ponteiros para elementos DO MESMO TIPO permite saber quantos elementos existem entre um 
     endereço e outro
@@ -70,11 +70,11 @@ int main()
    *ptr1 = 25;
    printf("Lendo o valor de x apos trocar o valor apontado por ptr1 para 25: %d\n", x);
    printf("Lendo o valor apontado por ptr1: %d\n",*ptr1);
-
+   
    printf("Endereco de x: %p\n", &x);
    printf("Endereco de ptr1: %p\n",&ptr1);
-
-   int vetor[5] = {1,2,3,4,5};
+   printf("Teste: apenas o nome do vetor: %p\n",ptr1); // valor contido no vetor: endereço de x, execute e verifique que é igual
+   int vetor[5] = {1,2,3,4,5};	
    int *ptrVetor;
    ptrVetor = vetor; // ptrVetor aponta para o primeiro elemento
 
@@ -85,7 +85,7 @@ int main()
 
    int i  = 0;
    for(i=0;i<5;i++)
-       printf(" posicao %d) %d\nendereco do vetor: %p\nlocal de memoria para onde o vetor aponta: %ld\n\n",i,*ptrVetor++,&ptrVetor,ptrVetor);
+       printf(" posicao %d) %d\nendereco do vetor: %p\nlocal de memoria para onde o vetor aponta: %p\n\n",i,*ptrVetor++,&ptrVetor,ptrVetor);
    
 // Decremento: exemplo -> imprimir string ao contrario
 
@@ -106,7 +106,7 @@ int main()
     ptrString--; // o último caractere era o '\0'
 
     printf("String na ordem inversa:\n");
-    while(ptrString >= s) // enquanto ptrString for >= que &s[0]
+    while(ptrString >= s) // enquanto ptrString for >= que &s[0] 
         putchar(*ptrString--); // imprime e depois decrementa
     
 // Diferenca
