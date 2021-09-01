@@ -1,7 +1,7 @@
 /*
 Bibliografia:
 - Linguagem C, Luís Damas, 10a edição
-- Cap 10
+- Cap 8
 Monitoria de IC2, 2021/2, Maria Vitória
 */
 #include <stdio.h>
