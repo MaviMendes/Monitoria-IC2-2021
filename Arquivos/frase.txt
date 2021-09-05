@@ -1,0 +1,1 @@
+Tem que adicionar o espaço      porque fputs não adiciona espaço
