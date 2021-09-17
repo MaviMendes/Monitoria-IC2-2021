@@ -38,7 +38,7 @@ void imprimirCardapio(PRATO **cardapio, int n, int np)
 {
     int i;
     int j,k;
-
+    
     for(i=0;i<n;i++)
     {
         printf("\n#Cardapio %d\n\n",i+1);
@@ -67,7 +67,7 @@ void preencheEstrutura(PRATO **cardapios,int n)
         cardapios[i] = (PRATO*)malloc(np*sizeof(PRATO));
         for(j=0;j<np;j++)
         {
-        printf("\nNome do prato %d:\n",i+1);
+        printf("\nNome do prato %d:\n",j+1);
         //fscanf(cardapio[i]->nome,50,stdin); // da pra melhorar isso aqui
         fgets(cardapios[i][j].nome,50,stdin);
         printf("Valor:\n");

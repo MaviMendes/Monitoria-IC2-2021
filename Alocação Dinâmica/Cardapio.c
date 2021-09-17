@@ -12,7 +12,7 @@ typedef struct pratoRestaurante{
     char **ingredientes;
 } PRATO;
 
-PRATO **inicializaEstrutura(PRATO *cardapio, int n)
+PRATO *inicializaEstrutura(PRATO *cardapio, int n)
 {
     return (PRATO*)malloc(n*sizeof(PRATO));
 }

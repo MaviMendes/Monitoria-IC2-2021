@@ -9,12 +9,25 @@ Maria Vitoria
 
 
 
-Dados n triangulos e seus 3 lados, imprime os triangulos ordenador em ordem crescente de acordo com a sua area
+Dados n triangulos e seus 3 lados, imprime os triangulos ordenados em ordem crescente de acordo com a sua area
 1 - Nao eh necessario criar nenhuma outra estrutura de dado
 2 - Pesquise algum metodo simples de ordenacao
 3 - Modifique apenas a funcao dada e teste
+4 - Pesquise uma função para calcular a área de um triângulo que seja conveniente para esse problema
 
 Casos de teste:
+3
+7 24 25
+5 12 13
+3 4 5
+
+5
+5 6 8
+2 3 4
+8 15 17
+10 15 10
+4 6 9
+
 
 */
 
